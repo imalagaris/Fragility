@@ -1,11 +1,9 @@
 #' Ridge Regression for Electrode Readings
 #' 
-#' Perform ridge regression to predict the electrode readings
-#' for the next time point based on the value from the previous
-#' time point
+#' A long long description.
 #' 
-#' @param xt matrix, What does row and column mean?
-#' @param xtp1 matrix, the electrode readings in the next time point
+#' @param xt matrix. What does row and column mean?
+#' @param xtp1 matrix. the electrode readings in the next time point
 #' 
 #' @examples
 #' ...
@@ -39,12 +37,7 @@ ridge <- function(xt, xtp1, lambda, intercept = FALSE, iw) {
   }
   AEigen <- eigen(A)
   e <- Mod(AEigen$values)
-  me <- max(e)
-  # if(me >= 1){
-  #   print(paste0("Solution in timewindow ",iw," is not stable (",me,")"))
-  # } else {
-  #   print(paste0("Solution in timewindow ",iw," is stable (",me,")"))
-  # }
+
   A
 }
 

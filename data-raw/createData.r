@@ -15,6 +15,7 @@ times <- seq(-10, 10, length.out=ncol(ptEpoch))
 times_with_sign <- ifelse(times >= 0, paste0("+", times), as.character(times))
 colnames(ptEpoch) <- paste0('t', times_with_sign)
 
+ptEpoch <- t(ptEpoch)
 
 usethis::use_data(ptEpoch, overwrite = TRUE)
 
