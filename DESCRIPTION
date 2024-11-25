@@ -15,16 +15,22 @@ Authors@R:
     role = "aut"
     comment = c(ORCID = "0000-0000-0000-0000")),
     person(
+    given = "Oliver", 
+    family = "Zhou",  
+    email = "zhou.oliverfr@gmail.com", 
+    role = "ctb"
+    comment = c(ORCID = "0000-0000-0000-0000")),
+    person(
     given = "Liliana", 
     family = "Camarillo Rodriguez",  
     email = "your email", 
-    role = "aut"
+    role = "ctb"
     comment = c(ORCID = "0000-0000-0000-0000")),
     person(
     given = "Sean M.", 
     family = "O'leary",  
     email = "your email", 
-    role = "aut"
+    role = "ctb"
     comment = c(ORCID = "0000-0000-0000-0000")),
     person(
     given = "Patrick", 
