@@ -1,0 +1,42 @@
+Package: Fragility
+Title: One line description of what the package does
+Version: 0.99.0
+Authors@R: 
+    c(person(
+    given = "Jiefei", 
+    family = "Wang",
+    email = "szwjf08@gmail.com", 
+    role = c("aut", "cre")
+    comment = c(ORCID = "0000-0002-2709-5332")),
+    person(
+    given = "Anne-Cecile", 
+    family = "Lesage",
+    email = "your email", 
+    role = "aut"
+    comment = c(ORCID = "0000-0000-0000-0000")),
+    person(
+    given = "Liliana", 
+    family = "Camarillo Rodriguez",  
+    email = "your email", 
+    role = "aut"
+    comment = c(ORCID = "0000-0000-0000-0000")),
+    person(
+    given = "Sean M.", 
+    family = "O'leary",  
+    email = "your email", 
+    role = "aut"
+    comment = c(ORCID = "0000-0000-0000-0000")),
+    person(
+    given = "Patrick", 
+    family = "Karas",
+    email = "pjkaras@UTMB.EDU", 
+    role = "ctb")
+    )
+Description: Calculate fragility index based on intracranial electrocorticographic (ECoG) recordings. The method is based on the paper by Li et al. (2017) <doi: 10.23919/ACC.2017.7963378>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
