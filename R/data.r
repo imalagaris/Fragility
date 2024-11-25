@@ -1,4 +1,4 @@
-#' Arabidopsis QTL data on gravitropism
+#' This is an example documentation for data
 #'
 #' Data from a QTL experiment on gravitropism in
 #' Arabidopsis, with data on 162 recombinant inbred lines (Ler x
@@ -7,9 +7,9 @@
 #'
 #' @docType data
 #'
-#' @usage data(grav)
+#' @usage data(ptEpoch)
 #'
-#' @format An object of class \code{"cross"}; see \code{\link[qtl]{read.cross}}.
+#' @format A Matrix with 20001 rows (time points) and 84 columns (electrodes)
 #'
 #' @keywords datasets
 #'
@@ -19,8 +19,6 @@
 #' @source \href{https://phenome.jax.org/projects/Moore1b}{QTL Archive}
 #'
 #' @examples
-#' data(grav)
-#' times <- attr(grav, "time")
-#' phe <- grav$pheno
-#' \donttest{iplotCurves(phe, times)}
+#' data(ptEpoch)
+#' WHAT ELSE CAN WE DO WITH THIS DATA?
 "ptEpoch"

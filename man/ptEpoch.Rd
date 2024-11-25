@@ -3,15 +3,15 @@
 \docType{data}
 \name{ptEpoch}
 \alias{ptEpoch}
-\title{Arabidopsis QTL data on gravitropism}
+\title{This is an example documentation for data}
 \format{
-An object of class \code{"cross"}; see \code{\link[qtl]{read.cross}}.
+A Matrix with 20001 rows (time points) and 84 columns (electrodes)
 }
 \source{
 \href{https://phenome.jax.org/projects/Moore1b}{QTL Archive}
 }
 \usage{
-data(grav)
+data(ptEpoch)
 }
 \description{
 Data from a QTL experiment on gravitropism in
@@ -20,10 +20,8 @@ Cvi). The outcome is the root tip angle (in degrees) at two-minute
 increments over eight hours.
 }
 \examples{
-data(grav)
-times <- attr(grav, "time")
-phe <- grav$pheno
-\donttest{iplotCurves(phe, times)}
+data(ptEpoch)
+WHAT ELSE CAN WE DO WITH THIS DATA?
 }
 \references{
 Moore et al. (2013) Genetics 195:1077-1086
