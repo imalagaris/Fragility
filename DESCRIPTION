@@ -27,11 +27,11 @@ Authors@R:
     role = "ctb"
     comment = c(ORCID = "0000-0000-0000-0000")),
     person(
-    given = "Sean M.", 
-    family = "O'leary",  
-    email = "your email", 
+    given = "Sean", 
+    family = "O'Leary",  
+    email = "smoleary@utmb.edu", 
     role = "ctb"
-    comment = c(ORCID = "0000-0000-0000-0000")),
+    comment = c(ORCID = "0000-0003-3650-705X")),
     person(
     given = "Patrick", 
     family = "Karas",
