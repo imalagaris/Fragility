@@ -6,31 +6,31 @@ Authors@R:
     given = "Jiefei", 
     family = "Wang",
     email = "szwjf08@gmail.com", 
-    role = c("aut", "cre")
+    role = c("aut", "cre"),
     comment = c(ORCID = "0000-0002-2709-5332")),
     person(
     given = "Anne-Cecile", 
     family = "Lesage",
     email = "your email", 
-    role = "aut"
+    role = "aut",
     comment = c(ORCID = "0000-0000-0000-0000")),
     person(
     given = "Oliver", 
     family = "Zhou",  
     email = "zhou.oliverfr@gmail.com", 
-    role = "ctb"
+    role = "ctb",
     comment = c(ORCID = "0000-0000-0000-0000")),
     person(
     given = "Liliana", 
     family = "Camarillo Rodriguez",  
     email = "your email", 
-    role = "ctb"
+    role = "ctb",
     comment = c(ORCID = "0000-0000-0000-0000")),
     person(
     given = "Sean", 
     family = "O'Leary",  
     email = "smoleary@utmb.edu", 
-    role = "ctb"
+    role = "ctb",
     comment = c(ORCID = "0000-0003-3650-705X")),
     person(
     given = "Patrick", 
