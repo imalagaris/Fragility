@@ -46,9 +46,9 @@ res <- lapply(seq_len(n_steps), function(iw) {
 res[[1]]
 (predOfXtp1 <- with(res[[1]], xt %*% Ai))
 res[[1]]$xtp1
-res[[1]]$xtp1 - predOfXtp1
+E <- res[[1]]$xtp1 - predOfXtp1
 
-A <- unlist(lapply(res, `[[`, "Ai"))
+e <- unlist(lapply(res, `[[`, "Ai"))
 
 dim(A) <- c(n_elec, n_elec, n_steps)
 dimnames(A) <- list(
@@ -67,6 +67,8 @@ dimnames(R2) <- list(
 
 lambdas <- rep(lambda, length(res))
 
+t1 <- res[[1]]$xtp1
+pred <- with(res[[1]], xt %*% Ai)
 
 
 
