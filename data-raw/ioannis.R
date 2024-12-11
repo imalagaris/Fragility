@@ -82,4 +82,16 @@ ridgeRSQ <- function(xt, xtp1, A) {
 }
 
 
+lambdamin <- 0.0001
+lambdamax <- 10
+
+
+l <- \(x) {
+  ridge(x$xt, x$xtp1,lambda=lambdamin,intercept=F, NULL) |>
+  eigen() |>
+  _$values |>
+  Mod() |> max()
+}
+
+sapply(res, l)
 
