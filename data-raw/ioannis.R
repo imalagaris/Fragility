@@ -67,8 +67,19 @@ dimnames(R2) <- list(
 
 lambdas <- rep(lambda, length(res))
 
-t1 <- res[[1]]$xtp1
+x1 <- res[[1]]$xtp1
 pred <- with(res[[1]], xt %*% Ai)
+sst <- x1 |> apply(2, \(x) sum((x - mean(x))^2))
+sse <- (x1 - pred) |> apply(2, \(x) sum(x^2))
+rsq <- 1 - sse / sst
+
+
+
+ridgeRSQ <- function(xt, xtp1, A) {
+  sse <- (xtp1 - xt %*% A) |> apply(2, \(x) sum(x^2))
+  sst <- apply(xt, 2, \(x) sum((x - mean(x))^2))
+  1 - sse / sst
+}
 
 
 
