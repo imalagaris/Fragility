@@ -95,19 +95,22 @@ sapply(res, l)
 
 
 
-data("pt1run")
-
 repository <- results$repository
 t_window <- fragility_pipeline$get_settings("t_window")
 t_step <- fragility_pipeline$get_settings("t_step")
 soz <- fragility_pipeline$get_settings("soz")
 sozc <- fragility_pipeline$get_settings("sozc")
 f <- results$adj_frag_info$frag
+adj_frag_info <- results$adj_frag_info
+
+use_data(repository, t_window, t_step, soz, sozc, f, adj_frag_info,
+         internal = TRUE, overwrite = TRUE)
+
+
 frag_quantile(repository, f, t_window, t_step, soz, sozc)
 
 
-
-
+threshold_fragility(repository, adj_frag_info, t_step, 0.1, 1)
 
 
 
