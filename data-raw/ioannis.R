@@ -87,11 +87,28 @@ lambdamax <- 10
 
 
 l <- \(x) {
-  ridge(x$xt, x$xtp1,lambda=lambdamin,intercept=F, NULL) |>
-  eigen() |>
-  _$values |>
-  Mod() |> max()
+  res <- ridge(x$xt, x$xtp1,lambda = lambdamin,intercept = FALSE, NULL) |>
+  eigen(res) |> _$values |>  Mod() |> max()
 }
 
 sapply(res, l)
+
+
+
+data("pt1run")
+
+repository <- results$repository
+t_window <- fragility_pipeline$get_settings("t_window")
+t_step <- fragility_pipeline$get_settings("t_step")
+soz <- fragility_pipeline$get_settings("soz")
+sozc <- fragility_pipeline$get_settings("sozc")
+f <- results$adj_frag_info$frag
+frag_quantile(repository, f, t_window, t_step, soz, sozc)
+
+
+
+
+
+
+
 

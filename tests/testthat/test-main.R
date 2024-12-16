@@ -6,3 +6,15 @@ test_that("multiplication works", {
     fragilityRow() |>
     expect_no_error()
 })
+
+test_that("frag_quantile works", {
+  repository <- results$repository
+  t_window <- fragility_pipeline$get_settings("t_window")
+  t_step <- fragility_pipeline$get_settings("t_step")
+  soz <- fragility_pipeline$get_settings("soz")
+  sozc <- fragility_pipeline$get_settings("sozc")
+  f <- results$adj_frag_info$frag
+  frag_quantile(repository, f, t_window, t_step, soz, sozc) |> expect_no_error()
+
+})
+
